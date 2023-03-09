@@ -14,7 +14,7 @@ export default function ShowIcon ({iconName, resolution, size}){
 const styles = StyleSheet.create ({
     icon: {
         backgroundColor:'rgba(255,255,255,0.4)',
-        borderRadius:90,
+        borderRadius:50,
         marginTop:30
 
     }

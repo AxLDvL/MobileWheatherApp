@@ -2,8 +2,8 @@
 import {StatusBar, ActivityIndicator, StyleSheet, Text, View, ImageBackground} from 'react-native';
 import {useEffect, useState} from "react";
 import * as Location from "expo-location";
-import CurrentWeather from "./currentWeather";
-import Forecast from "./Forecast";
+import CurrentWeather from "./Component/currentWeather";
+import Forecast from "./Component/Forecast";
 
 const API_URL = (lat , lon) => `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=1989238b331f6165f5602ceb0709ebdf&units=metric&lang=fr`
 
@@ -53,7 +53,7 @@ export default function App() {
       }return (
       <View style={styles.container}>
 
-        <ImageBackground source={require('./assets/blue.png')} resizeMode="stretch" style={styles.image}>
+        <ImageBackground source={require('./assets/tree.jpg')} resizeMode="cover" style={styles.image}>
         <StatusBar style="auto" />
           <CurrentWeather data = {data} />
 
